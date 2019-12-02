@@ -1,0 +1,1579 @@
+
+{% extends "personal_portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div
+  id="page"
+  class="page">
+  <!-- Header -->
+
+  <header
+    id="site_header"
+    class="header mobile-menu-hide">
+    <div class="my-photo">
+      <img
+        alt="image"
+        src="{% static 'personal_portfolio/images/cartoon_1.jpg' %}"/>
+      <div class="mask"></div>
+    </div>
+
+    <div class="site-title-block">
+      <h1 class="site-title">Zeliang YAO</h1>
+
+      <p class="site-description">Python Developer</p>
+    </div>
+
+    <!-- <audio src="music/background.mp3" autoplay=true></audio> -->
+
+    <!-- Navigation & Social buttons -->
+
+    <div class="site-nav">
+      <!-- Main menu -->
+
+      <ul
+        id="nav"
+        class="site-main-menu">
+        <!-- About Me Subpage link -->
+
+        <li>
+          <a
+            class="pt-trigger"
+            href="#home"
+            data-animation="58"
+            data-goto="1">
+            Home
+          </a>
+
+          <!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
+        </li>
+
+        <!-- /About Me Subpage link -->
+
+        <!-- About Me Subpage link -->
+
+        <li>
+          <a
+            class="pt-trigger"
+            href="#about_me"
+            data-animation="59"
+            data-goto="2">
+            About me
+          </a>
+        </li>
+
+        <!-- /About Me Subpage link -->
+
+        <li>
+          <a
+            class="pt-trigger"
+            href="#resume"
+            data-animation="60"
+            data-goto="3">
+            Resume
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="pt-trigger"
+            href="#portfolio"
+            data-animation="61"
+            data-goto="4">
+            Portfolio
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="pt-trigger"
+            href="#blog"
+            data-animation="58"
+            data-goto="5">
+            Blog
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="pt-trigger"
+            href="#contact"
+            data-animation="59"
+            data-goto="6">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <!-- /Main menu -->
+
+      <!-- Social buttons -->
+
+      <ul class="social-links">
+        <li>
+          <a
+            class="tip social-button"
+            href="https://github.com/yaozeliang">
+            <img
+              src="{% static 'personal_portfolio/images/icons/github.png' %}"
+              />
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="tip social-button"
+            href="https://www.linkedin.com/in/zeliang-yao-359183114/">
+            <img src="{% static 'personal_portfolio/images/icons/linkedin.png' %}"/>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="tip social-button"
+            href="https://segmentfault.com/u/alpha94511">
+            <img
+              alt
+              src="{% static 'personal_portfolio/images/icons/segmentfault.png' %}"/>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="tip social-button"
+            href="http://www.yaozeliang.com/platform/">
+            <img
+              alt
+              src="{% static 'personal_portfolio/images/icons/injection.png' %}"
+              />
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="tip social-button"
+            href="https://www.xiaohongshu.com/user/profile/58eb9ce86a6a69550e309be4">
+            <img
+              alt
+              src="{% static 'personal_portfolio/images/icons/redbook.jpg' %}" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="tip social-button"
+            href="https://www.jianshu.com/u/d498207329a1">
+            <img
+              alt
+              src="{% static 'personal_portfolio/images/icons/jianshu.jpg' %}"
+              />
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- /Social buttons -->
+    </div>
+
+    <!-- Navigation & Social buttons -->
+  </header>
+
+  <!-- /Header -->
+
+  <!-- Mobile Header -->
+
+  <div class="mobile-header mobile-visible">
+    <div class="mobile-logo-container"><div class="mobile-site-title">Zeliang YAO</div></div>
+
+    <a class="menu-toggle mobile-visible"><i class="fa fa-bars"></i></a>
+  </div>
+
+  <!-- /Mobile Header -->
+
+  <!-- Main Content -->
+
+  <div
+    id="main"
+    class="site-main">
+    <!-- Page changer wrapper -->
+
+    <div class="pt-wrapper">
+      <!-- Subpages -->
+
+      <div class="subpages">
+        <!-- Home Subpage -->
+        
+        <section
+          class="pt-page pt-page-1 section-with-bg section-paddings-0"
+          style="background-image: url(../../static/personal_portfolio/images/home_page.jpg);"
+          data-id="home">
+          <div class="home-page-block-bg"><div class="mask"></div></div>
+
+          <div class="home-page-block">
+            <div class="v-align">
+              <h2>Zeliang YAO</h2>
+
+              <div
+                id="rotate"
+                class="text-rotate">
+                <div><p class="home-page-description">Python Dev</p></div>
+
+                <div><p class="home-page-description">BigData / Web</p></div>
+
+                <!-- <div><p class="home-page-description">Master, fresh graduate</p></div> -->
+              </div>
+
+              <div
+                class="block end"
+                style="text-align: center">
+                <ul class="info-list">
+                  <li><span class="title">Age</span><span class="value">25</span></li>
+
+                  <li>
+                    <span class="title">Address</span>
+
+                    <span class="value">Villejuif, Paris</span>
+                  </li>
+
+                  <li>
+                    <span class="title">E-mail</span>
+
+                    <span class="value">
+                      <a href="mailto:yaozeliangtest@outlook.com">yaozeliangtest@outlook.com</a>
+                    </span>
+                  </li>
+
+                  <li><span class="title">Phone</span><span class="value">+33 760322678</span></li>
+
+                  <li>
+                    <span class="title">Current Job</span>
+
+                    <span class="value available">Data Analysis</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- End of Home Subpage -->
+
+        <!-- About Me Subpage -->
+
+        <section
+          class="pt-page pt-page-2"
+          data-id="about_me">
+          <div class="section-title-block">
+            <h2 class="section-title">About Me</h2>
+
+            <h5 class="section-description">
+              Thinker, Developer, Expert in domain of hyaluronic acid
+            </h5>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6 subpage-block">
+              <div class="general-info">
+                <h3>Python Developer @ Direction Générale des Finances Publiques</h3>
+
+                <p>
+                  Graduated from
+
+                  <a href="https://www.efrei.fr/">EFREI</a>
+
+                  and
+
+                  <a href="https://en.wikipedia.org/wiki/Beijing_University_of_Technology">BJUT</a>
+
+                  ,                     majored in Business Intelligence, I got my Master degree in
+                  2018, Currently I'm working as a                     software developer at DGFIP
+                </p>
+
+                <p>
+                  Expert in the field of hyaluronic acid, StarCraft2 lover, Aesthetic products
+                  blogger,                     Sermonizer, Lifelong learner, Coding tutorial writer,
+                  Creater of plateform
+                  <a href="http://www.yaozeliang.com/platform/">
+                    Knowledge worth spreading of aesthetic products
+                  </a>
+
+                  ,                     maker of
+
+                  <a href="http://www.sohu.com/a/134917224_391361">GD Hammer</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 subpage-block">
+              <div class="block-title"><h3>Testimonials</h3></div>
+
+              <div class="testimonials owl-carousel">
+                <!-- Testimonial 2 -->
+
+                <div class="testimonial-item">
+                  <!-- Testimonial Content -->
+
+                  <div class="testimonial-content">
+                    <div class="testimonial-text">
+                      <p>
+                        " Zeliang worked well with others and efficiently carried forward the
+                        progress of our                           procject. "
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- /Testimonial Content -->
+
+                  <!-- Testimonial Author -->
+
+                  <div class="testimonial-credits">
+                    <!-- Picture -->
+
+                    <div class="testimonial-picture">
+                      <img
+                        alt
+                        src="{% static 'personal_portfolio/images/testimonials/denis_Moutard.jpg' %}"/>
+                        
+                    </div>
+
+                    <!-- /Picture -->
+
+                    <!-- Testimonial author information -->
+
+                    <div class="testimonial-author-info">
+                      <p class="testimonial-author">Denis Moutard</p>
+
+                      <p class="testimonial-firm">Société Générale</p>
+                    </div>
+                  </div>
+
+                  <!-- /Testimonial author information -->
+                </div>
+
+                <!-- End of Testimonial 2 -->
+
+                <!-- Testimonial 2 -->
+
+                <div
+                  class="testimonial-item"
+                  style="width:100%">
+                  <!-- Testimonial Content -->
+
+                  <div class="testimonial-content">
+                    <div class="testimonial-text">
+                      <p>
+                        "Zeliang is a self-motivated, reliable consultant with a great team spirit,
+                        he continuously                           produced more than expected."
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- /Testimonial Content -->
+
+                  <!-- Testimonial Author -->
+
+                  <div class="testimonial-credits">
+                    <!-- Picture -->
+
+                    <div class="testimonial-picture">
+                      <img
+                        alt
+                        src="{% static 'personal_portfolio/images/testimonials/thien_loc_nguyen.jpg' %}"/>
+                        
+                    </div>
+
+                    <!-- /Picture -->
+
+                    <!-- Testimonial author information -->
+
+                    <div class="testimonial-author-info">
+                      <p class="testimonial-author">Thien-Loc Nguyen</p>
+
+                      <p class="testimonial-firm">Société Générale</p>
+                    </div>
+                  </div>
+
+                  <!-- /Testimonial author information -->
+                </div>
+
+                <!-- End of Testimonial 2 -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Services block -->
+
+          <div class="block-title"><h3>Services</h3></div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <img src="{% static 'personal_portfolio/images/service/web_design.png' %}"/>
+                  <h4>Web Development</h4>
+                  <p>Creating and deploying a website from scratch & Customizing template</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <img
+                    alt="Copywriter"
+                    src="{% static 'personal_portfolio/images/service/copywrite.png' %}"/>
+                  <h4>Documentation</h4>
+                  <p>Sharp technical content writing for non-technical-savvy people</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <img
+                    alt="E-Commerce"
+                    src = "{% static 'personal_portfolio/images/service/social-media.png' %}"/>
+                  <h4>Aesthetic Consulting</h4>
+                  <p>Advice for choosing aesthetic products based on your current status</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <img
+                    alt="Management"
+                    src = "{% static 'personal_portfolio/images/service/creativity.png' %}"/>
+                  <h4>Course Design</h4>
+                  <p>Desigining basic Python tutorial for children</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of Services block -->
+
+          <!-- New Service -->
+
+          <!-- Services block -->
+
+          <div class="block-title"><h3>Clients</h3></div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <a
+                    href="https://www.economie.gouv.fr/dgfip"
+                    target="_blank">
+                    <img
+                      alt="image"
+                      src = "{% static 'personal_portfolio/images/clients/DGFP.png' %}"/>
+                  </a>
+                  <h4>DGFIP</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <a
+                    href="https://www.societegenerale.fr/"
+                    target="_blank">
+                    <img
+                      alt="image"
+                      src = "{% static 'personal_portfolio/images/clients/SG.png' %}"/>
+                  </a>
+                  <h4>Société Générale</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <a
+                    href="http://www.innoscape.com/"
+                    target="_blank">
+                    <img
+                      alt="image"
+                      src="{% static 'personal_portfolio/images/clients/INNOSCAPE.jpg' %}"/>
+                  </a>
+
+                  <h4>Innoscape</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="service-block">
+                <div class="service-info">
+                  <a
+                    href="https://www.vimexchina.com/"
+                    target="_blank">
+                    <img
+                      alt="image"
+                      src="{% static 'personal_portfolio/images/clients/SODEXIM.png' %}"/>
+                  </a>
+
+                  <h4>Vimex China</h4>
+
+                  <!-- <p>Desigining basic Python tutorial for children</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of Services block -->
+
+          <!-- Fun facts block -->
+
+          <div class="block-title"><h3>Fun Facts</h3></div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="fun-fact-block gray-bg">
+                <!-- <i class="pe-7s-icon pe-7s-smile"></i> -->
+
+                <i
+                  class="fas fa-female fa-3x"
+                  style="color:#82c91e">
+                </i>
+
+                <h4>Happy Customer</h4>
+
+                <span class="fun-value">>1,000</span>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="fun-fact-block">
+                <!-- <i class="pe-7s-icon pe-7s-alarm"></i> -->
+
+                <i
+                  class="fas fa-gamepad fa-3x"
+                  style="color:#be4bdb">
+                </i>
+
+                <h4>Games Played</h4>
+
+                <span class="fun-value">2,300</span>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="fun-fact-block gray-bg">
+                <i
+                  class="fas fa-money-bill-alt fa-3x"
+                  style="color:#4c6ef5">
+                </i>
+
+                <h4>Money in pocket</h4>
+
+                <span class="fun-value"><10 €</span>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 subpage-block">
+              <div class="fun-fact-block">
+                <!-- <i class="pe-7s-icon pe-7s-coffee"></i> -->
+
+                <i
+                  class="fas fa-book fa-3x"
+                  style="color:#fd7e14">
+                </i>
+
+                <h4>Books Read</h4>
+
+                <span class="fun-value">>500</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of Fun fucts block -->
+        </section>
+
+        <!-- End of About Me Subpage -->
+
+        <!-- Resume Subpage -->
+
+        <section
+          class="pt-page pt-page-3"
+          data-id="resume">
+          <div class="section-title-block">
+            <h2 class="section-title">Resume</h2>
+
+            <h5 class="section-description">1 Year 6 Months Experience</h5>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-4 subpage-block">
+              <div class="block-title"><h3>Experience</h3></div>
+
+              <div class="timeline">
+                <!-- Single event -->
+
+                <div class="timeline-event te-primary">
+                  <h5 class="event-date">Nov 2018 - Current</h5>
+
+                  <h4 class="event-name">Data Analyst</h4>
+
+                  <span class="event-description">Société Générale</span>
+
+                  <p>Data Cleaning, Integration, Analysis, Visualization, Packages & Api</p>
+                </div>
+
+                <!-- Single event -->
+
+                <div class="timeline-event te-primary">
+                  <h5 class="event-date">Mar 2018 - Oct 2018</h5>
+
+                  <h4 class="event-name">Data Engineer, Intern M2</h4>
+
+                  <span class="event-description">Innoscape</span>
+
+                  <p>
+                    Database design (MySql), Web Crawler, Data Visualization with PowerBI, PowerApps
+                    Devlopment
+                  </p>
+                </div>
+
+                <!-- Single event -->
+
+                <div class="timeline-event te-primary">
+                  <h5 class="event-date">May 2017 - Oct 2017</h5>
+
+                  <h4 class="event-name">FrontEnd-Developer, Intern M1</h4>
+
+                  <span class="event-description">Eyelle, Paris</span>
+
+                  <p>Web Design & Development, DB Manager, maintenance of website</p>
+                </div>
+              </div>
+
+              <br/>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <div class="download-cv-block">
+                    <a
+                      class="button"
+                      href="#"
+                      target="_blank"
+                      type="submit"
+                      onclick="window.open('../../static/personal_portfolio/cv/CV-FR-YAOZELIANG-DC.pdf')">
+                      Download Resume
+                    </a>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 subpage-block">
+              <div class="block-title"><h3>Education</h3></div>
+
+              <div class="timeline">
+                <!-- Single event -->
+
+                <div class="timeline-event te-primary">
+                  <h5 class="event-date">Sep 2016 - Nov 2018</h5>
+
+                  <h4 class="event-name">Master, EFREI</h4>
+
+                  <span class="event-description">Paris, France</span>
+
+                  <p>Business Intelligence: Python, R, Data Visualization, Hadoop, Spark, Pig</p>
+                </div>
+
+                <!-- Single event -->
+
+                <div class="timeline-event te-primary">
+                  <h5 class="event-date">Sep 2015 - Jun 2016</h5>
+
+                  <h4 class="event-name">Bachelor, University Paris 12</h4>
+
+                  <span class="event-description">Paris, France</span>
+
+                  <p>Bachelor's exchange programme between Paris 12 and BJUT</p>
+                </div>
+
+                <div class="timeline-event te-primary">
+                  <h5 class="event-date">Sep 2012 - Jun 2016</h5>
+
+                  <h4 class="event-name">Bachelor, Beijing University of Technology</h4>
+
+                  <span class="event-description">Beijing, China</span>
+
+                  <p>Computer Science: Operating System, C++, Java...</p>
+                </div>
+
+                <!-- Single event -->
+
+                <!--
+                  <div class="timeline-event te-primary">                       <h5
+                  class="event-date">2012</h5>                       <h4 class="event-name">YunHe
+                  HighSchool</h4>                       <span class="event-description">University
+                  of Studies</span>                       <p>Mauris magna sapien, pharetra
+                  consectetur fringilla vitae, interdum sed tortor.</p>                     </div>
+                -->
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 subpage-block">
+              <div class="block-title"><h3>Web Development</h3></div>
+
+              <div class="skills-info">
+                <h4>Html5, Css3, JavaScript</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-1"></div></div>
+
+                <h4>BootStrap4, Django</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-2"></div></div>
+
+                <h4>Server OVH, Filezila</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-3"></div></div>
+              </div>
+
+              <div class="block-title"><h3>Data</h3></div>
+
+              <div class="skills-info">
+                <h4>Python(Pandas,Numpy,Matplotlib),SQL</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-4"></div></div>
+
+                <!--
+                  <h4>Library: pandas, numpy, pymysql, pyspark</h4>                     <div
+                  class="skill-container">                       <div class="skill-percentage
+                  skill-5"></div>                     </div>
+                -->
+
+                <h4>Linux Ubuntu, Script Shell</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-6"></div></div>
+
+                <h4>Hadoop, Spark, Hive, Pig</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-7"></div></div>
+
+                <h4>PowerBI, PowerApps, SharePoint</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-8"></div></div>
+              </div>
+
+              <div class="block-title"><h3>Doc & Test</h3></div>
+
+              <div class="skills-info">
+                <h4>MarkDown, Sphinx, SilkTest</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-1"></div></div>
+
+                <h4>Git, Github</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-2"></div></div>
+
+                <h4>Trello, Jira, Slack</h4>
+
+                <div class="skill-container"><div class="skill-percentage skill-3"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            <div class="row">                 <div class="col-sm-12 col-md-12">
+            <div class="download-cv-block">                     <a class="button" target="_blank"
+            href="#">Download CV</a>                   </div>                 </div>
+            </div>
+          -->
+        </section>
+
+        <!-- End Resume Subpage -->
+
+        <!-- Portfolio Subpage -->
+
+        <section class="pt-page pt-page-4" data-id="portfolio">
+          <div class="section-title-block">
+            <h2 class="section-title">Portfolio</h2>
+            <h5 class="section-description">My Best Works</h5>
+          </div>
+
+          <!-- Portfolio Content -->
+
+          <div class="portfolio-content">
+            <!-- Portfolio filter -->
+
+            <!-- Portfolio filter -->
+                          <ul id="portfolio_filters" class="portfolio-filters">
+                            <li class="active">
+                              <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                            </li>
+                            <li>
+                              <a class="filter btn btn-sm btn-link" data-group="media">Python</a>
+                            </li>
+
+                            <li>
+                              <a class="filter btn btn-sm btn-link" data-group="web">Web</a>
+                            </li>
+
+                            <li>
+                              <a class="filter btn btn-sm btn-link" data-group="powerbi_powerapps">PowerApps</a>
+                            </li>
+
+                            <li>
+                              <a class="filter btn btn-sm btn-link" data-group="illustration">Hyaluronic Acid</a>
+                            </li>
+                            <li>
+                              <a class="filter btn btn-sm btn-link" data-group="data">Data Analysis</a>
+                            </li>
+                          </ul>
+                          <!-- End of Portfolio filter -->
+
+
+            <!-- Portfolio Grid -->
+
+            <div
+              id="portfolio_grid"
+              class="portfolio-grid portfolio-masonry masonry-grid-3">
+              <!-- Portfolio Item 1 -->
+
+              <figure class="item" data-groups='["all", "media","data"]'>
+                <a
+                  class="ajax-page-load"
+                  href="portfolio-1.html">
+                  <img
+                    src="{% static 'personal_portfolio/images/portfolio/project/pandas.png' %}"
+                   />
+                  <div>
+                    <h5 class="name">Project BCBS239</h5>
+
+                    <small>Data Analysis</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 1 -->
+
+              <!-- /Portfolio Item 2 -->
+
+              <figure
+                class="item"
+                data-groups='["all", "media","data"]'>
+                <a href="https://github.com/yaozeliang/pandas_share">
+                  <img
+                    src="{% static 'personal_portfolio/images/portfolio/project/pandas_toturial.jpg' %}"
+                   />
+                  <div>
+                    <h5 class="name">Basic Pandas Toturial</h5>
+
+                    <small>CN / Data Analysis</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <figure
+                class="item"
+                data-groups='["all", "media","data"]'>
+                <a href="https://github.com/yaozeliang/Data_Analysis_Titanic">
+                  <img
+                    src="{% static 'personal_portfolio/images/portfolio/project/titanic.jpg' %}"
+                    />
+                  <div>
+                    <h5 class="name">Titanic Survivors</h5>
+
+                    <small>EN / Data Analysis</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- Portfolio Item 3 -->
+
+              <figure
+                class="item"
+                data-groups='["all","illustration"]'>
+                <a
+                  class="lightbox"
+                  href="images/portfolio/acid/juvederm-family.png"
+                  title="Juvéderm family">
+                  <img
+                    src="{% static 'personal_portfolio/images/portfolio/acid/juvederm-family.png' %}"
+                    />
+                  <div>
+                    <h5 class="name">Aesthetic products</h5>
+
+                    <small>Juvéderm family</small>
+
+                    <i class="fa fa-image"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 3 -->
+
+              <!-- Portfolio Item 4 -->
+
+              <figure
+                class="item"
+                data-groups='["all", "media","powerbi_powerapps","data"]'>
+                <a
+                  class="ajax-page-load"
+                  href="portfolio-2.html">
+                  <img
+                    src="{% static 'personal_portfolio/images/portfolio/project/webcrawler.jpg' %}"
+                   />
+                  <div>
+                    <h5 class="name">Web Crawler</h5>
+
+                    <small>EN / Python</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 4 -->
+
+              <!-- Portfolio Item 5 -->
+
+              <figure
+                class="item"
+                data-groups='["all", "illustration"]'>
+                <a
+                  class="lightbox"
+                  href="images/portfolio/acid/stylage-family.png"
+                  title="Aliquam Condimentum Magna Rhoncus">
+                  <img
+                    src="{% static 'personal_portfolio/images/portfolio/acid/stylage-family.png' %}"
+                  />
+                  <div>
+                    <h5 class="name">Aesthetic products</h5>
+
+                    <small>Stylage family</small>
+
+                    <i class="fa fa-image"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 5 -->
+
+              <!-- Portfolio Item 7 -->
+
+              <figure
+                class="item"
+                data-groups='["all", "powerbi_powerapps"]'>
+                <a
+                  class="lightbox mfp-iframe"
+                  href="http://www.yaozeliang.com/resume/video/powerapps.mp4"
+                  title="Stock Management">
+                  <img
+                    alt
+                    src="{% static 'personal_portfolio/images/portfolio/project/hermes.jpg' %}"
+                  />
+                  <div>
+                    <h5 class="name">Stock Management for Chinese Buyer</h5>
+
+                    <small>FR / PowerApps</small>
+
+                    <i class="fa fa-video-camera"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 7 -->
+
+              <figure
+                class="item"
+                data-groups='["all","illustration"]'>
+                <a
+                  class="lightbox"
+                  href="{% static 'personal_portfolio/images/portfolio/acid/perfectha-family.png' %}"
+                  title="Perfectha-family">
+                  <img
+                    alt
+                    src = "{% static 'personal_portfolio/images/portfolio/acid/perfectha-family.png' %}"
+                   />
+                  <div>
+                    <h5 class="name">Aesthetic products</h5>
+
+                    <small>Perfectha-family</small>
+
+                    <i class="fa fa-image"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- Portfolio Item 8 -->
+
+              <figure
+                class="item"
+                data-groups='["all",  "media"]'>
+                <a href="https://segmentfault.com/u/alpha94511">
+                  <img
+                    alt
+                    src = "{% static 'personal_portfolio/images/portfolio/project/toturial.png' %}"
+                   />
+                  <div>
+                    <h5 class="name">Python Tricks Share</h5>
+
+                    <small>CN / Segmentfault</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 8 -->
+
+              <figure class="item" data-groups='["all",  "web"]'>
+                <a href="http://www.yaozeliang.com/platform/">
+                  <img
+                    alt
+                    src = "{% static 'personal_portfolio/images/portfolio/project/knowledge.png' %}"
+                    />
+                  <div>
+                    <h5 class="name">Platform of Hyaluronic Acid</h5>
+
+                    <small>CN / Community</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <figure
+                class="item"
+                data-groups='["all",  "web"]'>
+                <a href="http://www.yaozeliang.com/daigou/">
+                  <img
+                    alt
+                    src = "{% static 'personal_portfolio/images/portfolio/project/daigou.png' %}"
+                   />
+                  <div>
+                    <h5 class="name">
+                      Brief introduction of French well-known health care products
+                    </h5>
+
+                    <small>CN / Skin Care</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <figure
+                class="item"
+                data-groups='["all",  "web"]'>
+                <a href="http://www.sushido.fr/">
+                  <img
+                    alt
+                    src = "{% static 'personal_portfolio/images/portfolio/project/sushido.png' %}"
+                    />
+                  <div>
+                    <h5 class="name">Japanese Restaurant</h5>
+
+                    <small>FR / Online site</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- Portfolio Item 9 -->
+
+              <figure
+                class="item"
+                data-groups='["all","illustration"]'>
+                <a
+                  class="lightbox"
+                  href="{% static 'personal_portfolio/images/portfolio/acid/restylane-family.png' %}"
+                  title="Restylane-family">
+                  <img
+                    alt
+                    src = "{% static 'personal_portfolio/images/portfolio/acid/restylane-family.png' %}"
+                  />
+                  <div>
+                    <h5 class="name">Aesthetic products</h5>
+
+                    <small>Restylane family</small>
+
+                    <i class="fa fa-image"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 9 -->
+
+              <!-- Portfolio Item 11 -->
+
+              <figure
+                class="item"
+                data-groups='["all","illustration"]'>
+                <a
+                  class="lightbox"
+                  href="{% static 'personal_portfolio/images/portfolio/acid/teosyal.png' %}"
+                  title="Teosyal family">
+                  <img src="{% static 'personal_portfolio/images/portfolio/acid/teosyal.png' %}"/>
+                  <div>
+                    <h5 class="name">Aesthetic products</h5>
+
+                    <small>Teosyal family</small>
+
+                    <i class="fa fa-image"></i>
+                  </div>
+                </a>
+              </figure>
+
+              <!-- /Portfolio Item 11 -->
+
+              <figure
+                class="item"
+                data-groups='["all", "media","data"]'>
+                <a href="https://github.com/yaozeliang/Data_Analysis_Efrei">
+                  <img
+                    alt
+                    src="{% static 'personal_portfolio/images/portfolio/project/efrei.jpg' %}"
+                   />
+                  <div>
+                    <h5 class="name">Projects at Efrei</h5>
+
+                    <small>EN / School projects</small>
+
+                    <i class="fas fa-suitcase"></i>
+                  </div>
+                </a>
+              </figure>
+
+            </div>
+
+          </div>
+
+          <!-- /Portfolio Content -->
+        </section>
+
+        <!-- /Portfolio Subpage -->
+
+        <!-- Blog Subpage -->
+
+        <section
+          class="pt-page pt-page-5"
+          data-id="blog">
+          <div class="section-title-block">
+            <h2 class="section-title">Blog</h2>
+
+            <h5 class="section-description">Live in the moment</h5>
+          </div>
+
+          <div class="blog-masonry">
+
+            <!-- Blog Post Python Fluent Python-->
+            <div class="item">
+              <div class="blog-card">
+                <div class="media-block">
+                  <a href="https://github.com/yaozeliang/Fluent-Python">
+                    <img
+                      class="post-image img-responsive"
+                      alt="100-exercises"
+                      
+                      src="{% static 'personal_portfolio/images/blog/blog-python-basic-h.jpg' %}"/>
+                    <div class="mask"></div>
+
+                    <div class="post-date">
+                      <span class="day">14</span>
+                      <span class="month">August</span>
+                      <span class="year">2019</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="post-info">
+                  <ul class="category"><li>Zh_Cn</li></ul>
+
+                  <a href="https://github.com/yaozeliang/Fluent-Python">
+                    <h4 class="blog-item-title">Notes of "Fluent Python"  </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blog Post Python OOP Review-->
+            <div class="item">
+              <div class="blog-card">
+                <div class="media-block">
+                  <a href="https://github.com/yaozeliang/Python-OOP-Review">
+                    <img
+                      class="post-image img-responsive"
+                      alt="100-exercises"
+                      src="{% static 'personal_portfolio/images/blog/blog-python-basic-g.jpg' %}"
+                     />
+                    <div class="mask"></div>
+
+                    <div class="post-date">
+                      <span class="day">05</span>
+                      <span class="month">June</span>
+                      <span class="year">2019</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="post-info">
+                  <ul class="category"><li>Zh_Cn</li></ul>
+
+                  <a href="https://github.com/yaozeliang/Python-OOP-Review">
+                    <h4 class="blog-item-title">Python OOP Review  </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <!-- Blog Post 100 Exercises-->
+            <div class="item">
+              <div class="blog-card">
+                <div class="media-block">
+                  <a href="https://github.com/yaozeliang/Python-100-exercises-notebook">
+                    <img
+                      class="post-image img-responsive"
+                      alt="100-exercises"
+                      src="{% static 'personal_portfolio/images/blog/blog-python-basic-p.jpg' %}"
+                      />
+                    <div class="mask"></div>
+
+                    <div class="post-date">
+                      <span class="day">20</span>
+                      <span class="month">May</span>
+                      <span class="year">2019</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="post-info">
+                  <ul class="category"><li>Zh_Cn</li></ul>
+
+                  <a href="https://github.com/yaozeliang/pandas_share">
+                    <h4 class="blog-item-title">Python 100 exercises  </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Blog Post Pandas  -->
+            <div class="item">
+              <div class="blog-card">
+                <div class="media-block">
+                  <a href="https://github.com/yaozeliang/pandas_share">
+                    <img
+                      class="post-image img-responsive"
+                      alt="blog-post-6"
+                      src="{% static 'personal_portfolio/images/blog/blog-pandas.jpg' %}"
+                      />
+                    <div class="mask"></div>
+
+                    <div class="post-date">
+                      <span class="day">10</span>
+                      <span class="month">Mar</span>
+                      <span class="year">2019</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="post-info">
+                  <ul class="category"><li>Zh_Cn</li></ul>
+
+                  <a href="https://github.com/yaozeliang/pandas_share">
+                    <h4 class="blog-item-title">Pandas Learning </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Blog Post Pandas 3 -->
+            <!-- <div class="item">
+              <div class="blog-card">
+                <div class="media-block">
+                  <a href="https://github.com/yaozeliang/pandas_share/blob/master/Pandas%E4%B9%8B%E6%97%85_03%20Merge%2C%20Join%2C%20Concate/Merge%2C%20Join%2C%20Concat.ipynb">
+                    <img
+                      class="post-image img-responsive"
+                      alt="blog-post-3"
+                      src="images/blog/blog-pandas.jpg"/>
+                    <div class="mask"></div>
+
+                    <div class="post-date">
+                      <span class="day">4</span>
+
+                      <span class="month">Mar</span>
+
+                      <span class="year">2019</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="post-info">
+                  <ul class="category"><li><a href="#">Python/CN</a></li></ul>
+
+                  <a href="https://github.com/yaozeliang/pandas_share/blob/master/Pandas%E4%B9%8B%E6%97%85_03%20Merge%2C%20Join%2C%20Concate/Merge%2C%20Join%2C%20Concat.ipynb">
+                    <h4 class="blog-item-title">Pandas Learning (3) Merge,Join,Concatenate</h4>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+
+
+
+              <!-- Blog Post Python Useful Tricks -->
+
+              <div class="item">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a href="https://github.com/yaozeliang/python_tricks_share">
+                      <img
+                        class="post-image img-responsive"
+                        alt="blog-post-1"
+                        src="{% static 'personal_portfolio/images/blog/blog-python-basic-j.jpg' %}"
+                        />
+                      <div class="mask"></div>
+
+                      <div class="post-date">
+                        <span class="day">19</span>
+
+                        <span class="month">Feb</span>
+
+                        <span class="year">2019</span>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="post-info">
+                    <ul class="category"><li>Zh_Cn</li></ul>
+
+                    <a href="https://github.com/yaozeliang/python_tricks_share">
+                      <h4 class="blog-item-title">Python Useful Tricks</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- Blog Post Python Basics -->
+
+              <div class="item">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a href="https://segmentfault.com/u/alpha94511/articles?page=2">
+                      <img
+                        class="post-image img-responsive"
+                        alt="blog-post-1"
+                        src="{% static 'personal_portfolio/images/blog/blog-python-basic-a.jpg' %}"
+                       />
+                      <div class="mask"></div>
+
+                      <div class="post-date">
+                        <span class="day">18</span>
+
+                        <span class="month">Feb</span>
+
+                        <span class="year">2019</span>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="post-info">
+                    <ul class="category"><li>Zh_Cn</li></ul>
+
+                    <a href="https://segmentfault.com/u/alpha94511/articles?page=2">
+                      <h4 class="blog-item-title">Python basic toturial</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+          </div>
+        </section>
+
+        <!-- End Blog Subpage -->
+
+        <!-- Contact Subpage -->
+
+        <section
+          class="pt-page pt-page-6"
+          data-id="contact">
+          <div class="section-title-block">
+            <h2 class="section-title">Contact</h2>
+
+            <h5 class="section-description">Get in Touch</h5>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6 subpage-block">
+              <div class="block-title"><h3>Get in Touch</h3></div>
+
+              <p>Please leave a message, I'll get back to you as soon as possible</p>
+
+              <div class="contact-info-block">
+                <div class="ci-icon">
+                  <!-- <i class="pe-7s-icon pe-7s-map-marker"></i> -->
+
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                </div>
+
+                <div class="ci-text"><h4>Paris, France</h4></div>
+              </div>
+
+              <div class="contact-info-block">
+                <div class="ci-icon">
+                  <!-- <i class="pe-7s-icon pe-7s-mail"></i> -->
+
+                  <i class="far fa-envelope fa-2x"></i>
+                </div>
+
+                <div class="ci-text"><h4>yaozeliangtest@outlook.com</h4></div>
+              </div>
+
+              <div class="contact-info-block">
+                <div class="ci-icon">
+                  <!-- <i class="pe-7s-icon pe-7s-call"></i> -->
+
+                  <i class="fas fa-mobile-alt fa-2x"></i>
+                </div>
+
+                <div class="ci-text"><h4>+33 760322678 / +86 13269288106</h4></div>
+              </div>
+
+              <div class="contact-info-block">
+                <div class="ci-icon">
+                  <!-- <i class="pe-7s-icon pe-7s-add-user"></i> -->
+
+                  <i class="fab fa-weixin fa-2x"></i>
+                </div>
+
+                <div class="ci-text"><h4>alpha94511</h4></div>
+              </div>
+
+              <div class="contact-info-block">
+                <div class="ci-icon">
+                  <!-- <i class="pe-7s-icon pe-7s-add-user"></i> -->
+
+                  <i class="fab fa-alipay fa-2x"></i>
+                </div>
+
+                <div class="ci-text"><h4>attractionlawyao@gmail.com</h4></div>
+              </div>
+
+              <div class="contact-info-block">
+                <div class="ci-icon"><i class="fab fa-bitcoin fa-2x"></i></div>
+
+                <div class="ci-text"><h4>1FRdSimQPurs4Zqn3riWoFReowRy9KCWET</h4></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 subpage-block">
+              <div class="block-title"><h3>Let’s connect</h3></div>
+
+              <form
+                id="contact-form"
+                action="../../static/personal_portfolio/contact_form/contact_form.php"
+                method="post">
+                <div class="messages"></div>
+
+                <div class="controls">
+                  <div class="form-group">
+                    <input
+                      id="form_name"
+                      class="form-control"
+                      name="name"
+                      type="text"
+                      placeholder="Full Name"
+                      required="required"
+                      data-error="Name is required."/>
+                    <div class="form-control-border"></div>
+
+                    <i class="form-control-icon fa fa-user"></i>
+
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      id="form_email"
+                      class="form-control"
+                      name="email"
+                      type="email"
+                      placeholder="Email Address"
+                      required="required"
+                      data-error="Valid email is required."/>
+                    <div class="form-control-border"></div>
+
+                    <i class="form-control-icon fa fa-envelope"></i>
+
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea
+                      id="form_message"
+                      class="form-control"
+                      name="message"
+                      placeholder="Message for me"
+                      rows="4"
+                      required="required"
+                      data-error="Please, leave me a message.">
+                    </textarea>
+
+                    <div class="form-control-border"></div>
+
+                    <i class="form-control-icon fa fa-comment"></i>
+
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"
+                    data-callback="correctCaptcha">
+                  </div>
+
+                  <input
+                    class="button btn-send"
+                    type="submit"
+                    value="Send message"/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Contact Subpage -->
+      </div>
+    </div>
+
+    <!-- /Page changer wrapper -->
+  </div>
+
+  <!-- /Main Content -->
+</div>
+
+
+{% endblock content %}
